@@ -1,10 +1,14 @@
+//
+// Created by bpswe on 9/24/2018.
+// Modified by YLi on 10/05/2018
+//
+
 #pragma once
 
 #include <iostream>
 #include <assert.h>
 #include <math.h>
 #include "array.h"
-//students should not change this
 
 using size_t = std::size_t;
 using std::cout;

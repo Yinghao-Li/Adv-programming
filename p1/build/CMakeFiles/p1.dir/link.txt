@@ -1,1 +1,0 @@
-/usr/local/pacerepov1/gcc/7.3.0/bin/g++   -Werror  -L/usr/local/pacerepov1/gcc/mpc/0.9/lib -L/usr/local/pacerepov1/gcc/mpfr/3.1.0/lib -L/usr/local/pacerepov1/gmp/6.1.0/lib -L/usr/local/pacerepov1/gcc/7.3.0/lib64 CMakeFiles/p1.dir/src/simple_string.cc.o CMakeFiles/p1.dir/main.cc.o  -o p1 

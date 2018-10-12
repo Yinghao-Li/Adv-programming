@@ -1,3 +1,8 @@
+//
+// Created by bpswe on 9/24/2018.
+// Modified by YLi on 10/09/2018
+//
+
 #include <iostream>
 #include <vector>
 #include "simple_string.h"
