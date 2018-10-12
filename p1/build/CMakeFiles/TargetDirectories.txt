@@ -1,0 +1,3 @@
+/nv/coc-ice/yli3100/hw_6122/p1/build/CMakeFiles/rebuild_cache.dir
+/nv/coc-ice/yli3100/hw_6122/p1/build/CMakeFiles/edit_cache.dir
+/nv/coc-ice/yli3100/hw_6122/p1/build/CMakeFiles/p1.dir
