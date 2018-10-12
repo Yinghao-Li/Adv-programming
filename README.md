@@ -7,7 +7,7 @@ To run a project, you should go to the `build` directory under that project, the
 $ module load gcc/7.3.0
 $ module load cmake/3.9.1
 $ cmake ..
-$ cmake
+$ make
 ```
 
 check memory leak:
