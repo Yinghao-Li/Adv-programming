@@ -12,5 +12,14 @@ $ make
 
 check memory leak:
 ```
-valgrind --tool=memcheck ./p1
+$ valgrind --tool=memcheck ./p1
+```
+
+To compile a c++ file with openmpi:
+```
+$ mpicxx <fileName> -o <outputName>
+```
+To run a program with openmpi:
+```
+mpirun -np <numProcs> <fileName> [<arg1> <arg2> ...]
 ```
