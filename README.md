@@ -15,6 +15,12 @@ check memory leak:
 $ valgrind --tool=memcheck ./p1
 ```
 
+## Run with Openmpi
+First we need to load module
+```
+$ module load openmpi/[<version>]
+$ module load pgi/[<version>]
+```
 To compile a c++ file with openmpi:
 ```
 $ mpicxx <fileName> -o <outputName>
