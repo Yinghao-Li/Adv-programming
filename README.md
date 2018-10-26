@@ -18,8 +18,8 @@ $ valgrind --tool=memcheck ./p1
 ## Run with Openmpi
 First we need to load module
 ```
-$ module load openmpi/[<version>]
 $ module load pgi/[<version>]
+$ module load openmpi/[<version>]
 ```
 To compile a c++ file with openmpi:
 ```
