@@ -21,5 +21,5 @@ $ mpicxx <fileName> -o <outputName>
 ```
 To run a program with openmpi:
 ```
-mpirun -np <numProcs> <fileName> [<arg1> <arg2> ...]
+$ mpirun -np <numProcs> <fileName> [<arg1> <arg2> ...]
 ```
