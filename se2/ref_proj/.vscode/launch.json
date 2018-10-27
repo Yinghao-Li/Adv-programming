@@ -8,14 +8,14 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/new_name.out",
+            "program": "${workspaceFolder}/heat_ref.out",
             "args": [
-                "10",
-                "10",
-                "8",
-                "5"
+                "95.2",
+                "30.84",
+                "15",
+                "20"
             ],
-            "stopAtEntry": true,
+            "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": true,

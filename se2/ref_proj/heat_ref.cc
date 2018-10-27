@@ -18,8 +18,8 @@ int main(int argc, char** argv) {
 		exit(1);
 	}
 
-    int T1temp = atoi(argv[1]);
-    int T2temp = atoi(argv[2]);
+    double T1temp = atof(argv[1]);
+    double T2temp = atof(argv[2]);
 
     int NumGridPoints = atoi(argv[3]);
     int NumTimeSteps = atoi(argv[4]);
@@ -50,6 +50,9 @@ int main(int argc, char** argv) {
     for (int i = 0; i < NumGridPoints + 1; ++i)
         outFile << fixed << setprecision(1) << *(u_new + i) << ", ";
     outFile << fixed << setprecision(1) << *(u_new + NumGridPoints + 1);
+
+    delete []u_new;
+    delete []u_pre;
 
     return 0;
 }
