@@ -1,0 +1,286 @@
+The system is: Linux - 2.6.32-573.12.1.el6.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is PGI, found in "/nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/3.9.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcpp 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is PGI, found in "/nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/3.9.1/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_42761/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_42761.dir/build.make CMakeFiles/cmTC_42761.dir/build
+gmake[1]: Entering directory `/nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_42761.dir/testCCompiler.c.o
+/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcc    -o CMakeFiles/cmTC_42761.dir/testCCompiler.c.o   -c /nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_42761
+/nv/usr-local-rhel6.7/pacerepov1/cmake/3.9.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42761.dir/link.txt --verbose=1
+/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcc    -L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib  CMakeFiles/cmTC_42761.dir/testCCompiler.c.o  -o cmTC_42761 
+gmake[1]: Leaving directory `/nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_cf29c/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_cf29c.dir/build.make CMakeFiles/cmTC_cf29c.dir/build
+gmake[1]: Entering directory `/nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cf29c.dir/CMakeCCompilerABI.c.o
+/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcc    -o CMakeFiles/cmTC_cf29c.dir/CMakeCCompilerABI.c.o   -c /nv/usr-local-rhel6.7/pacerepov1/cmake/3.9.1/share/cmake-3.9/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_cf29c
+/nv/usr-local-rhel6.7/pacerepov1/cmake/3.9.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf29c.dir/link.txt --verbose=1
+/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcc    -L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib -v CMakeFiles/cmTC_cf29c.dir/CMakeCCompilerABI.c.o  -o cmTC_cf29c 
+Export PGI=/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10
+
+/usr/bin//ld /usr/lib64/crt1.o /usr/lib64/crti.o /nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib/trace_init.o /usr/lib/gcc/x86_64-redhat-linux/4.4.7/crtbegin.o /nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib/initmp.o -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib/pgi.ld -L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib -L/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/libso -L/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/lib -L/opt/torque/current/lib -L/opt/oracle/current/lib -L -L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib -L/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.4.7 CMakeFiles/cmTC_cf29c.dir/CMakeCCompilerABI.c.o -rpath /nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib -o cmTC_cf29c -lpgmp -lnuma -lpthread -lnspgc -lpgc -lm -lgcc -lc -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.4.7/crtend.o /usr/lib64/crtn.o
+gmake[1]: Leaving directory `/nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_cf29c/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_cf29c.dir/build.make CMakeFiles/cmTC_cf29c.dir/build]
+  ignore line: [gmake[1]: Entering directory `/nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_cf29c.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcc    -o CMakeFiles/cmTC_cf29c.dir/CMakeCCompilerABI.c.o   -c /nv/usr-local-rhel6.7/pacerepov1/cmake/3.9.1/share/cmake-3.9/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_cf29c]
+  ignore line: [/nv/usr-local-rhel6.7/pacerepov1/cmake/3.9.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf29c.dir/link.txt --verbose=1]
+  ignore line: [/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcc    -L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib -v CMakeFiles/cmTC_cf29c.dir/CMakeCCompilerABI.c.o  -o cmTC_cf29c ]
+  ignore line: [Export PGI=/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10]
+  ignore line: []
+  link line: [/usr/bin//ld /usr/lib64/crt1.o /usr/lib64/crti.o /nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib/trace_init.o /usr/lib/gcc/x86_64-redhat-linux/4.4.7/crtbegin.o /nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib/initmp.o -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib/pgi.ld -L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib -L/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/libso -L/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/lib -L/opt/torque/current/lib -L/opt/oracle/current/lib -L -L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib -L/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.4.7 CMakeFiles/cmTC_cf29c.dir/CMakeCCompilerABI.c.o -rpath /nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib -o cmTC_cf29c -lpgmp -lnuma -lpthread -lnspgc -lpgc -lm -lgcc -lc -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.4.7/crtend.o /usr/lib64/crtn.o]
+    arg [/usr/bin//ld] ==> ignore
+    arg [/usr/lib64/crt1.o] ==> ignore
+    arg [/usr/lib64/crti.o] ==> ignore
+    arg [/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib/trace_init.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.4.7/crtbegin.o] ==> ignore
+    arg [/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib/initmp.o] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib/pgi.ld] ==> ignore
+    arg [-L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib] ==> dir [/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib]
+    arg [-L/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/libso] ==> dir [/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/libso]
+    arg [-L/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/lib] ==> dir [/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/lib]
+    arg [-L/opt/torque/current/lib] ==> dir [/opt/torque/current/lib]
+    arg [-L/opt/oracle/current/lib] ==> dir [/opt/oracle/current/lib]
+    arg [-L-L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib] ==> ignore
+    arg [-L/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib] ==> dir [/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib]
+    arg [-L/usr/lib64] ==> dir [/usr/lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.4.7] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.4.7]
+    arg [CMakeFiles/cmTC_cf29c.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_cf29c] ==> ignore
+    arg [-lpgmp] ==> lib [pgmp]
+    arg [-lnuma] ==> lib [numa]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lnspgc] ==> lib [nspgc]
+    arg [-lpgc] ==> lib [pgc]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.4.7/crtend.o] ==> ignore
+    arg [/usr/lib64/crtn.o] ==> ignore
+  collapse library dir [/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib] ==> [/usr/local/pacerepov1/openmpi/1.8/pgi-14.10/lib]
+  collapse library dir [/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/libso] ==> [/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/libso]
+  collapse library dir [/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/lib] ==> [/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/lib]
+  collapse library dir [/opt/torque/current/lib] ==> [/opt/torque/current/lib]
+  collapse library dir [/opt/oracle/current/lib] ==> [/opt/oracle/current/lib]
+  collapse library dir [/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib] ==> [/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib]
+  collapse library dir [/usr/lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.4.7] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.4.7]
+  implicit libs: [pgmp;numa;pthread;nspgc;pgc;m;gcc;c;gcc]
+  implicit dirs: [/usr/local/pacerepov1/openmpi/1.8/pgi-14.10/lib;/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/libso;/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/lib;/opt/torque/current/lib;/opt/oracle/current/lib;/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib;/usr/lib64;/usr/lib/gcc/x86_64-redhat-linux/4.4.7]
+  implicit fwks: []
+
+
+
+
+Detecting C [-c99] compiler features compiled with the following output:
+Change Dir: /nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_1602c/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_1602c.dir/build.make CMakeFiles/cmTC_1602c.dir/build
+gmake[1]: Entering directory `/nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1602c.dir/feature_tests.c.o
+/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcc   -c99 -o CMakeFiles/cmTC_1602c.dir/feature_tests.c.o   -c /nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_1602c
+/nv/usr-local-rhel6.7/pacerepov1/cmake/3.9.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1602c.dir/link.txt --verbose=1
+/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcc    -L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib  CMakeFiles/cmTC_1602c.dir/feature_tests.c.o  -o cmTC_1602c 
+gmake[1]: Leaving directory `/nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp'
+
+
+
+
+Detecting C [-c89] compiler features compiled with the following output:
+Change Dir: /nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_f4e46/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_f4e46.dir/build.make CMakeFiles/cmTC_f4e46.dir/build
+gmake[1]: Entering directory `/nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f4e46.dir/feature_tests.c.o
+/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcc   -c89 -o CMakeFiles/cmTC_f4e46.dir/feature_tests.c.o   -c /nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_f4e46
+/nv/usr-local-rhel6.7/pacerepov1/cmake/3.9.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4e46.dir/link.txt --verbose=1
+/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcc    -L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib  CMakeFiles/cmTC_f4e46.dir/feature_tests.c.o  -o cmTC_f4e46 
+gmake[1]: Leaving directory `/nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_2ec7f/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_2ec7f.dir/build.make CMakeFiles/cmTC_2ec7f.dir/build
+gmake[1]: Entering directory `/nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2ec7f.dir/testCXXCompiler.cxx.o
+/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcpp     -o CMakeFiles/cmTC_2ec7f.dir/testCXXCompiler.cxx.o -c /nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_2ec7f
+/nv/usr-local-rhel6.7/pacerepov1/cmake/3.9.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ec7f.dir/link.txt --verbose=1
+/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcpp     -L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib  CMakeFiles/cmTC_2ec7f.dir/testCXXCompiler.cxx.o  -o cmTC_2ec7f 
+gmake[1]: Leaving directory `/nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_c5d5d/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_c5d5d.dir/build.make CMakeFiles/cmTC_c5d5d.dir/build
+gmake[1]: Entering directory `/nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c5d5d.dir/CMakeCXXCompilerABI.cpp.o
+/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcpp     -o CMakeFiles/cmTC_c5d5d.dir/CMakeCXXCompilerABI.cpp.o -c /nv/usr-local-rhel6.7/pacerepov1/cmake/3.9.1/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_c5d5d
+/nv/usr-local-rhel6.7/pacerepov1/cmake/3.9.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5d5d.dir/link.txt --verbose=1
+/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcpp     -L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib -v CMakeFiles/cmTC_c5d5d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c5d5d 
+Export PGI=/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10
+
+/usr/bin//ld /usr/lib64/crt1.o /usr/lib64/crti.o /nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib/trace_init.o /usr/lib/gcc/x86_64-redhat-linux/4.4.7/crtbegin.o /nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib/initmp.o -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib/pgi.ld -L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib -L/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/libso -L/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/lib -L/opt/torque/current/lib -L/opt/oracle/current/lib -L -L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib -L/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.4.7 CMakeFiles/cmTC_c5d5d.dir/CMakeCXXCompilerABI.cpp.o -rpath /nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib -o cmTC_c5d5d -lzceh -lgcc_eh --eh-frame-hdr -lstdz -lCz -lpgmp -lnuma -lpthread -lnspgc -lpgc -lm -lgcc -lc -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.4.7/crtend.o /usr/lib64/crtn.o
+gmake[1]: Leaving directory `/nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_c5d5d/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_c5d5d.dir/build.make CMakeFiles/cmTC_c5d5d.dir/build]
+  ignore line: [gmake[1]: Entering directory `/nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_c5d5d.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcpp     -o CMakeFiles/cmTC_c5d5d.dir/CMakeCXXCompilerABI.cpp.o -c /nv/usr-local-rhel6.7/pacerepov1/cmake/3.9.1/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_c5d5d]
+  ignore line: [/nv/usr-local-rhel6.7/pacerepov1/cmake/3.9.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5d5d.dir/link.txt --verbose=1]
+  ignore line: [/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcpp     -L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib -v CMakeFiles/cmTC_c5d5d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c5d5d ]
+  ignore line: [Export PGI=/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10]
+  ignore line: []
+  link line: [/usr/bin//ld /usr/lib64/crt1.o /usr/lib64/crti.o /nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib/trace_init.o /usr/lib/gcc/x86_64-redhat-linux/4.4.7/crtbegin.o /nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib/initmp.o -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib/pgi.ld -L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib -L/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/libso -L/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/lib -L/opt/torque/current/lib -L/opt/oracle/current/lib -L -L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib -L/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.4.7 CMakeFiles/cmTC_c5d5d.dir/CMakeCXXCompilerABI.cpp.o -rpath /nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib -o cmTC_c5d5d -lzceh -lgcc_eh --eh-frame-hdr -lstdz -lCz -lpgmp -lnuma -lpthread -lnspgc -lpgc -lm -lgcc -lc -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.4.7/crtend.o /usr/lib64/crtn.o]
+    arg [/usr/bin//ld] ==> ignore
+    arg [/usr/lib64/crt1.o] ==> ignore
+    arg [/usr/lib64/crti.o] ==> ignore
+    arg [/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib/trace_init.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.4.7/crtbegin.o] ==> ignore
+    arg [/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib/initmp.o] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib/pgi.ld] ==> ignore
+    arg [-L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib] ==> dir [/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib]
+    arg [-L/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/libso] ==> dir [/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/libso]
+    arg [-L/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/lib] ==> dir [/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/lib]
+    arg [-L/opt/torque/current/lib] ==> dir [/opt/torque/current/lib]
+    arg [-L/opt/oracle/current/lib] ==> dir [/opt/oracle/current/lib]
+    arg [-L-L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib] ==> ignore
+    arg [-L/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib] ==> dir [/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib]
+    arg [-L/usr/lib64] ==> dir [/usr/lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.4.7] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.4.7]
+    arg [CMakeFiles/cmTC_c5d5d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_c5d5d] ==> ignore
+    arg [-lzceh] ==> lib [zceh]
+    arg [-lgcc_eh] ==> lib [gcc_eh]
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-lstdz] ==> lib [stdz]
+    arg [-lCz] ==> lib [Cz]
+    arg [-lpgmp] ==> lib [pgmp]
+    arg [-lnuma] ==> lib [numa]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lnspgc] ==> lib [nspgc]
+    arg [-lpgc] ==> lib [pgc]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.4.7/crtend.o] ==> ignore
+    arg [/usr/lib64/crtn.o] ==> ignore
+  collapse library dir [/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib] ==> [/usr/local/pacerepov1/openmpi/1.8/pgi-14.10/lib]
+  collapse library dir [/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/libso] ==> [/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/libso]
+  collapse library dir [/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/lib] ==> [/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/lib]
+  collapse library dir [/opt/torque/current/lib] ==> [/opt/torque/current/lib]
+  collapse library dir [/opt/oracle/current/lib] ==> [/opt/oracle/current/lib]
+  collapse library dir [/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib] ==> [/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib]
+  collapse library dir [/usr/lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.4.7] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.4.7]
+  implicit libs: [zceh;gcc_eh;stdz;Cz;pgmp;numa;pthread;nspgc;pgc;m;gcc;c;gcc]
+  implicit dirs: [/usr/local/pacerepov1/openmpi/1.8/pgi-14.10/lib;/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/libso;/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/lib;/opt/torque/current/lib;/opt/oracle/current/lib;/nv/usr-local-rhel6.7/pacerepov1/pgi/14.10/linux86-64/14.10/lib;/usr/lib64;/usr/lib/gcc/x86_64-redhat-linux/4.4.7]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [--c++11;-A] compiler features compiled with the following output:
+Change Dir: /nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_89597/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_89597.dir/build.make CMakeFiles/cmTC_89597.dir/build
+gmake[1]: Entering directory `/nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_89597.dir/feature_tests.cxx.o
+/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcpp    --c++11 -A -o CMakeFiles/cmTC_89597.dir/feature_tests.cxx.o -c /nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_89597
+/nv/usr-local-rhel6.7/pacerepov1/cmake/3.9.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89597.dir/link.txt --verbose=1
+/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcpp     -L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib  CMakeFiles/cmTC_89597.dir/feature_tests.cxx.o  -o cmTC_89597 
+gmake[1]: Leaving directory `/nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp'
+
+
+
+
+Detecting CXX [-A] compiler features compiled with the following output:
+Change Dir: /nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_924f7/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_924f7.dir/build.make CMakeFiles/cmTC_924f7.dir/build
+gmake[1]: Entering directory `/nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_924f7.dir/feature_tests.cxx.o
+/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcpp    -A -o CMakeFiles/cmTC_924f7.dir/feature_tests.cxx.o -c /nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_924f7
+/nv/usr-local-rhel6.7/pacerepov1/cmake/3.9.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_924f7.dir/link.txt --verbose=1
+/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcpp     -L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib  CMakeFiles/cmTC_924f7.dir/feature_tests.cxx.o  -o cmTC_924f7 
+gmake[1]: Leaving directory `/nv/coc-ice/yli3100/hw_6122/se2/build/CMakeFiles/CMakeTmp'
+
+

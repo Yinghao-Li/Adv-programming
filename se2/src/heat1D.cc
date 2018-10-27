@@ -40,8 +40,8 @@ int main(int argc, char ** argv) {
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 
     // Parse Arguments
-    int T1temp = atoi(argv[1]);
-    int T2temp = atoi(argv[2]);
+    double T1temp = atof(argv[1]);
+    double T2temp = atof(argv[2]);
     int NumGridPoints = atoi(argv[3]);
     int NumTimeSteps = atoi(argv[4]);
     double r = (double)k / (double)(h * h);

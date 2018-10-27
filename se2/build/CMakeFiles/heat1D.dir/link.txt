@@ -1,0 +1,1 @@
+/usr/local/pacerepov1/pgi/14.10/linux86-64/14.10/bin/pgcpp    -L/usr/local/pacerepov1//openmpi/1.8/pgi-14.10/lib CMakeFiles/heat1D.dir/src/heat1D.cc.o  -o heat1D /usr/local/pacerepov1/openmpi/1.8/pgi-14.10/lib/libmpi_cxx.so /usr/local/pacerepov1/openmpi/1.8/pgi-14.10/lib/libmpi.so 
