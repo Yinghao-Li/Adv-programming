@@ -142,9 +142,9 @@ int main(int argc, char ** argv) {
     if (rank == 0) {
         ofstream outFile;
         outFile.open("heat1Doutput.csv", ios::out);
-        for (int i = 0; i < NumGridPoints + 1; ++i)
-            outFile << fixed << setprecision(1) << *(u_pre + i) << ", ";
-        outFile << fixed << setprecision(1) << *(u_pre + NumGridPoints + 1);
+        for (int i = 1; i < NumGridPoints; ++i)
+            outFile << *(u_pre + i) << ", ";
+        outFile << *(u_pre + NumGridPoints);
     }
 
     delete [] u_pre;
@@ -152,3 +152,4 @@ int main(int argc, char ** argv) {
     delete [] u_new_last;
     MPI_Finalize();
 }
+

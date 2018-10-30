@@ -47,9 +47,9 @@ int main(int argc, char** argv) {
 
     ofstream outFile;
     outFile.open("heat1Doutput.csv", ios::out);
-    for (int i = 0; i < NumGridPoints + 1; ++i)
-        outFile << fixed << setprecision(1) << *(u_new + i) << ", ";
-    outFile << fixed << setprecision(1) << *(u_new + NumGridPoints + 1);
+    for (int i = 1; i < NumGridPoints; ++i)
+        outFile << *(u_new + i) << ", ";
+    outFile << *(u_new + NumGridPoints);
 
     delete []u_new;
     delete []u_pre;
