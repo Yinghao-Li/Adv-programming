@@ -1,7 +1,6 @@
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
-#include <assert.h>
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -53,7 +52,6 @@ int main(int argc, char ** argv) {
     *(u_pre + NumGridPoints + 1) = T2temp;
 
     // Decide malipulation size for each process
-    assert(NumGridPoints > world_size);
     int new_arr_size;
     int new_arr_size_last;
     if (NumGridPoints % world_size != 0) {
