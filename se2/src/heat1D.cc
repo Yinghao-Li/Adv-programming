@@ -68,6 +68,10 @@ int main(int argc, char ** argv) {
     double *u_new;					// Array to hold new value from other ranks
     u_new_last = new double[new_arr_size_last];
     u_new = new double[new_arr_size];
+    double *u_send_last;
+    double *u_send;
+    u_send_last = new double[new_arr_size_last + 2];
+    u_send = new double[new_arr_size + 2];
 
     // cout << "new_arr_size = " << new_arr_size << "new_arr_size_last = " << new_arr_size_last << endl;
 
@@ -79,7 +83,21 @@ int main(int argc, char ** argv) {
         // root node
         if (rank == 0) {
             // Broadcast the previous array.
-            MPI_Bcast(u_pre, NumGridPoints + 2, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+            for (int i = 1; i < world_size; ++i) {
+                offset = new_arr_size * i;
+                if (i != world_size - 1) {
+                    for (int n = 0; n < new_arr_size + 2; ++n) {
+                        *(u_send + n) = *(u_pre + offset + n);
+                    }
+                    MPI_Send(u_send, new_arr_size + 2, MPI_DOUBLE, i, 0, MPI_COMM_WORLD);
+                }
+                else {
+                    for (int n = 0; n < new_arr_size_last + 2; ++n) {
+                        *(u_send_last + n) = *(u_pre + offset + n);
+                    }
+                    MPI_Send(u_send_last, new_arr_size_last + 2, MPI_DOUBLE, i, 0, MPI_COMM_WORLD);
+                }
+            }
 
             // Count array assignment for node 0.
             for (int i = 0; i < new_arr_size; ++i) {
@@ -91,7 +109,7 @@ int main(int argc, char ** argv) {
             }
 
             // Block to receive results from others and merge new values into previous array.
-            for (int i = 1; i < world_size; i++) {
+            for (int i = 1; i < world_size; ++i) {
                 offset = new_arr_size * i + 1;
                 if (i != world_size - 1) {
                     MPI_Recv(u_new, new_arr_size, MPI_DOUBLE, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
@@ -112,25 +130,21 @@ int main(int argc, char ** argv) {
         }
         // Calculate new temperature for other processes
         else if (rank != world_size - 1) {
-            // Receive broadcast from root node.
-            MPI_Bcast(u_pre, NumGridPoints + 2, MPI_DOUBLE, 0, MPI_COMM_WORLD);
-            offset = new_arr_size * rank + 1;
+            // Receive from root node.
+            MPI_Recv(u_send, new_arr_size + 2, MPI_DOUBLE, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
             for (int i = 0; i < new_arr_size; ++i) {
-                
-                *(u_new + i) = *(u_pre + i + offset) * (1 - 2*r) + *(u_pre + i + offset - 1) * r +
-                                *(u_pre + i + offset + 1) * r;
+                *(u_new + i) = *(u_send + i + 1) * (1 - 2*r) + *(u_send + i) * r + *(u_send + i + 2) * r;
             }
             // Send result to root node
             MPI_Send(u_new, new_arr_size, MPI_DOUBLE, 0, 0, MPI_COMM_WORLD);
         }
         // Calculate new temperature for last process
         else {
-            // Receive broadcast from root node
-            MPI_Bcast(u_pre, NumGridPoints + 2, MPI_DOUBLE, 0, MPI_COMM_WORLD);
-            offset = new_arr_size * rank + 1;
+            // Receive from root node
+            MPI_Recv(u_send_last, new_arr_size_last + 2, MPI_DOUBLE, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
             for (int i = 0; i < new_arr_size_last; ++i) {
-                *(u_new_last + i) = *(u_pre + i + offset) * (1 - 2*r) + *(u_pre + i + offset - 1) * r +
-                                *(u_pre + i + offset + 1) * r;
+                *(u_new_last + i) = *(u_send_last + i + 1) * (1 - 2*r) + *(u_send_last + i) * r +
+                                    *(u_send_last + i + 2) * r;
             }
             // Send result to root node
             MPI_Send(u_new_last, new_arr_size_last, MPI_DOUBLE, 0, 0, MPI_COMM_WORLD);
