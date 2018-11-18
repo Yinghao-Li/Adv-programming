@@ -6,10 +6,6 @@
 #include <vector>
 #include "heat.h"
 
-// using namespace std;
-
-void ReadFile(char*, float&, int&, float&, int&, int&, int&, vector<ft_2D>&, vector<ft_3D>&);
-
 int main(int argc, char** argv) {
     if (argc == 1) {
 		cout << "\nNo argument was passed.\n";
@@ -29,7 +25,16 @@ int main(int argc, char** argv) {
     vector<ft_2D> vec_2D;
     vector<ft_3D> vec_3D;
 
-    ReadFile(argv[1], k, timestep, start_temp, width, height, depth, vec_2D, vec_3D);
+    bool mode;
+
+    mode = ReadFile(argv[1], k, timestep, start_temp, width, height, depth, vec_2D, vec_3D);
+
+    if (mode == D_2) {
+        Diffusion_2D(k, timestep, start_temp, width, height, vec_2D);
+    }
+    else {
+        Diffusion_3D(k, timestep, start_temp, width, height, depth, vec_3D);
+    }
 
     getchar();
     return 0;
