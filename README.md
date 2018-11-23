@@ -29,3 +29,8 @@ To run a program with openmpi:
 ```
 $ mpirun -np <numProcs> <fileName> [<arg1> <arg2> ...]
 ```
+
+log in to compute node
+```
+$ qsub -I -q coc-ice -l nodes=1:ppn=2:gpus=1,walltime=2:00:00,pmem=2gb
+```
