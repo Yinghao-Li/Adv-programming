@@ -1,0 +1,6 @@
+﻿  main.cc
+e:\proj\ece6122\p2\cpu-test\cpu-test\heat.h(58): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+e:\proj\ece6122\p2\cpu-test\cpu-test\heat.h(80): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+e:\proj\ece6122\p2\cpu-test\cpu-test\heat.h(104): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+e:\proj\ece6122\p2\cpu-test\cpu-test\heat.h(141): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  cpu-test.vcxproj -> E:\Proj\ECE6122\p2\cpu-test\Debug\cpu-test.exe

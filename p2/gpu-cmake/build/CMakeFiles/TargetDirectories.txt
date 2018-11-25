@@ -1,0 +1,3 @@
+/nv/coc-ice/yli3100/hw_6122/p2/build/CMakeFiles/rebuild_cache.dir
+/nv/coc-ice/yli3100/hw_6122/p2/build/CMakeFiles/edit_cache.dir
+/nv/coc-ice/yli3100/hw_6122/p2/build/CMakeFiles/heat2D3D.dir

@@ -1,0 +1,17 @@
+﻿  
+  E:\Proj\ECE6122\p2\gpu\gpu>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile   -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od  /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "E:\Proj\ECE6122\p2\gpu\gpu\kernel.cu" -clean 
+  kernel.cu
+  Compiling CUDA source file kernel.cu...
+  
+  E:\Proj\ECE6122\p2\gpu\gpu>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc141.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "E:\Proj\ECE6122\p2\gpu\gpu\kernel.cu" 
+  kernel.cu
+E:\Proj\ECE6122\p2\gpu\src\heat.h(58): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+E:\Proj\ECE6122\p2\gpu\src\heat.h(80): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+E:\Proj\ECE6122\p2\gpu\src\heat.h(104): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+E:\Proj\ECE6122\p2\gpu\src\heat.h(141): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+E:/Proj/ECE6122/p2/gpu/gpu/kernel.cu(175): warning C4018: '<': signed/unsigned mismatch
+E:/Proj/ECE6122/p2/gpu/gpu/kernel.cu(176): warning C4018: '<': signed/unsigned mismatch
+E:/Proj/ECE6122/p2/gpu/gpu/kernel.cu(187): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+E:/Proj/ECE6122/p2/gpu/gpu/kernel.cu(271): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+     Creating library E:\Proj\ECE6122\p2\gpu\x64\Debug\gpu.lib and object E:\Proj\ECE6122\p2\gpu\x64\Debug\gpu.exp
+  gpu.vcxproj -> E:\Proj\ECE6122\p2\gpu\x64\Debug\gpu.exe

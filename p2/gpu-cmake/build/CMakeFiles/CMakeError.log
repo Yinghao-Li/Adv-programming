@@ -1,0 +1,51 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /nv/coc-ice/yli3100/hw_6122/p2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_71314/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_71314.dir/build.make CMakeFiles/cmTC_71314.dir/build
+gmake[1]: Entering directory `/nv/coc-ice/yli3100/hw_6122/p2/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_71314.dir/CheckSymbolExists.c.o
+/usr/local/pacerepov1/gcc/4.9.0/bin/gcc   -fPIC    -o CMakeFiles/cmTC_71314.dir/CheckSymbolExists.c.o   -c /nv/coc-ice/yli3100/hw_6122/p2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_71314
+/nv/usr-local-rhel6.7/pacerepov1/cmake/3.9.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71314.dir/link.txt --verbose=1
+/usr/local/pacerepov1/gcc/4.9.0/bin/gcc -fPIC   -L/usr/local/pacerepov1/cuda/9.1/lib64 -L/usr/local/pacerepov1/cuda/9.1/lib -L/usr/local/pacerepov1/gcc/mpc/0.9/lib -L/usr/local/pacerepov1/gcc/mpfr/3.1.0/lib -L/usr/local/pacerepov1/gmp/5.0.2/lib -L/usr/local/pacerepov1/gcc/4.9.0/lib64  CMakeFiles/cmTC_71314.dir/CheckSymbolExists.c.o  -o cmTC_71314 
+CMakeFiles/cmTC_71314.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_71314] Error 1
+gmake[1]: Leaving directory `/nv/coc-ice/yli3100/hw_6122/p2/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_71314/fast] Error 2
+
+File /nv/coc-ice/yli3100/hw_6122/p2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /nv/coc-ice/yli3100/hw_6122/p2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_474bb/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_474bb.dir/build.make CMakeFiles/cmTC_474bb.dir/build
+gmake[1]: Entering directory `/nv/coc-ice/yli3100/hw_6122/p2/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_474bb.dir/CheckFunctionExists.c.o
+/usr/local/pacerepov1/gcc/4.9.0/bin/gcc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_474bb.dir/CheckFunctionExists.c.o   -c /nv/usr-local-rhel6.7/pacerepov1/cmake/3.9.1/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_474bb
+/nv/usr-local-rhel6.7/pacerepov1/cmake/3.9.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_474bb.dir/link.txt --verbose=1
+/usr/local/pacerepov1/gcc/4.9.0/bin/gcc -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create  -L/usr/local/pacerepov1/cuda/9.1/lib64 -L/usr/local/pacerepov1/cuda/9.1/lib -L/usr/local/pacerepov1/gcc/mpc/0.9/lib -L/usr/local/pacerepov1/gcc/mpfr/3.1.0/lib -L/usr/local/pacerepov1/gmp/5.0.2/lib -L/usr/local/pacerepov1/gcc/4.9.0/lib64  CMakeFiles/cmTC_474bb.dir/CheckFunctionExists.c.o  -o cmTC_474bb -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_474bb] Error 1
+gmake[1]: Leaving directory `/nv/coc-ice/yli3100/hw_6122/p2/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_474bb/fast] Error 2
+
+
