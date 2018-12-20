@@ -5,9 +5,6 @@
 #include <mpi.h>
 #include <math.h>
 
-#include <ctime>
-#include <chrono>
-
 #include <complex.h>
 #include <input_image.h>
 
@@ -25,8 +22,6 @@ template<class T>
 inline void transpose(T* a, int n);
 
 int main(int argc, char ** argv) {
-
-	auto start = chrono::system_clock::now();
 
 	if (argc != 4) {
 		cout << "The number of argument is incorrect!" << endl;
@@ -85,12 +80,8 @@ int main(int argc, char ** argv) {
 		s_height = img_height / world_size;
 	}
 
-	// cout << s_height << ' ' << m_height << endl;
-
 	int m_length = m_height * img_width;
 	int s_length = s_height * img_width;
-
-	// cout << m_length << ' ' << s_length << endl;
 
 	int my_l = 0;
 	
@@ -101,13 +92,6 @@ int main(int argc, char ** argv) {
 
 	if (rank == 0) {
 
-		// for (int i = 0; i < img_width; ++i) {
-		// 	for (int j = 0; j < img_height;) {
-		// 		cout << img_data[i * img_width + j] << ' ';
-		// 	}
-		// 	cout << endl;
-		// }
-		
 		my_l = m_length;
 		t_array = new Complex[m_length];
 		memcpy(t_array, img_data, sizeof(Complex) * m_length);
@@ -125,15 +109,6 @@ int main(int argc, char ** argv) {
 			sr_counts[i] = sizeof(Complex) * s_length;
 		}
 
-		// for (int i = 0; i < world_size; ++i) {
-		// 	cout << "displs: " << displs[i] << " sr_counts: " << sr_counts[i] << endl;
-		// }
-
-		// for (int i = 0; i < m_length; ++i) {
-		// 	cout << t_array[i] << ' ';
-		// }
-		// cout << endl;
-	}
 	else {
 		my_l = s_length;
 		t_array = new Complex[s_length];
@@ -141,21 +116,16 @@ int main(int argc, char ** argv) {
 		for (int i = 0; i < s_height; ++i) {
 			fft1D(t_array + i * img_width, (unsigned int)img_width);
 		}
-
-		// for (int i = 0; i < s_length; ++i) {
-		// 	cout << t_array[i] << ' ';
-		// }
-		// cout << endl;
 	}
 	MPI_Gatherv(t_array, sizeof(Complex) * my_l, MPI_CHAR, img_data, sr_counts,
 				displs, MPI_CHAR, 0, MPI_COMM_WORLD);
-	
+
 	if (rank == 0) {
 		transpose<Complex>(img_data, img_width);
 	}
 	MPI_Scatterv(img_data, sr_counts, displs, MPI_CHAR, t_array,
 				 sizeof(Complex) * my_l, MPI_CHAR, 0, MPI_COMM_WORLD);
-	
+
 	for (int i = 0; i < my_l / img_width; ++i) {
 		fft1D(t_array + i * img_width, (unsigned int)img_width);
 	}
@@ -175,16 +145,9 @@ int main(int argc, char ** argv) {
 		// }
 		// transpose<Complex>(img_data, img_width);
 		// img.save_image_data_real("inv.txt", img_data, img_width, img_height);
-
-		
 	}
 
 	MPI_Finalize();
-
-	auto end = chrono::system_clock::now();
-	chrono::duration<double> elapsed_time = end-start;
-	cout << "elapsed_time = " << elapsed_time.count() << endl;
-
 	return 0;
 }
 
@@ -226,7 +189,7 @@ void fft1D(Complex* x, unsigned int N) {
 			x[a] = x[b];
 			x[b] = t;
 		}
-	}	       
+	}
 }
 
 
