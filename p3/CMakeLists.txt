@@ -21,7 +21,7 @@ set(SOURCE_FILES
 		src/helper_string.h
 	)
 
-add_executable(p31 fft2d.cc ${SOURCE_FILES})
-add_executable(p32 MPI_FFT.cc ${SOURCE_FILES})
-cuda_add_executable(p33 kernel.cu ${SOURCE_FILES})
+add_executable(p31 thr_fft2d.cc ${SOURCE_FILES})
+add_executable(p32 MPI_fft2d.cc ${SOURCE_FILES})
+cuda_add_executable(p33 CUDA_fft2d.cu ${SOURCE_FILES})
 target_link_libraries(p32 ${MPI_CXX_LIBRARIES})
